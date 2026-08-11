@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMax - Product Details</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div><span>Email: info@shopmax.com</span></div>
+            <div><span id="current-date-time" class="text-warning"></span></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="full-width-nav navbar navbar-expand-lg p-0 sticky-top">
+        <div class="container-fluid px-0">
+            <a class="navbar-brand fw-bold fs-3 px-3" href="index.html" style="color: var(--primary-color);">ShopMax</a>
+            <div class="collapse navbar-collapse" id="ecommerceNavbar">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Wireless Headphones</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container mb-5">
+        <div class="row g-4 mb-5">
+            <!-- Left Pan: Image Zoom Box -->
+            <div class="col-md-5">
+                <div class="zoom-image-container shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+                        alt="Product Zoom Image" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Right Pan: Product Basic Information -->
+            <div class="col-md-7">
+                <h2 class="fw-bold">Wireless Noise-Canceling Headphones</h2>
+                <p class="text-muted">Category: Electronics | Brand: Sony</p>
+                <h3 class="price my-3">$120.00</h3>
+                <p class="mb-4"><strong>Quick Overview:</strong> Premium over-ear headphones featuring active noise
+                    cancellation, 30-hour battery life, and crystal-clear sound acoustics for studio production and
+                    daily listening.</p>
+
+                <!-- Cart Item Quantity Section -->
+                <div class="d-flex align-items-center gap-2 mb-4">
+                    <label class="fw-semibold">Quantity:</label>
+                    <div class="input-group" style="width: 130px;">
+                        <button class="btn btn-outline-secondary" type="button" id="btnQtyMinus">-</button>
+                        <input type="text" class="form-control text-center" id="productQty" value="1" readonly>
+                        <button class="btn btn-outline-secondary" type="button" id="btnQtyPlus">+</button>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-3">
+                    <a href="cart.html" class="btn btn-theme px-4 py-2">Add to Cart</a>
+                    <a href="cart.html" class="btn btn-secondary-theme px-4 py-2">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Detail Section -->
+        <div class="card p-4 shadow-sm border-0 mb-5">
+            <h4 class="fw-bold mb-3">Product Description</h4>
+            <p>Designed for comfort and immersion, these wireless headphones feature plush ear cushions and an
+                adjustable headband. Built-in microphones deliver ultra-clear call quality even in noisy urban
+                environments.</p>
+            <ul>
+                <li>Bluetooth 5.2 connectivity up to 10 meters</li>
+                <li>Fast charging: 10 minutes charge gives 3 hours playback</li>
+                <li>Foldable design with custom protective travel case</li>
+            </ul>
+        </div>
+
+        <!-- Related Product Section -->
+        <div>
+            <h4 class="fw-bold mb-4">Related Products</h4>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=500&q=80"
+                            class="card-img-top" alt="Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Studio Earbuds</h5>
+                            <p class="price">$75.00</p>
+                            <a href="cart.html" class="btn btn-theme btn-sm">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+                            class="card-img-top" alt="Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="price">$250.00</p>
+                            <a href="cart.html" class="btn btn-theme btn-sm">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-footer py-3 text-center mt-auto">
+        <p class="mb-0">&copy; 2026 ShopMax Ecommerce. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
