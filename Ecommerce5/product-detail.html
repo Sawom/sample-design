@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraStore - Product Detail</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Utilities Header -->
+    <div class="top-header text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="current-date-time"></div>
+            <div class="d-flex gap-3">
+                <a href="#">My Account</a>
+                <a href="#">Wishlist</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search & Logo Bar -->
+    <div class="bg-white py-3 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html"
+                class="h3 d-flex justify-content-between align-items-center fw-bold text-decoration-none text-dark m-0">
+                <img src="images/logo.jpg" class="d-block " style="height: 60px; width: 60px; object-fit: cover;"
+                    alt="Banner 3">
+                Aura<span class="text-primary">Store</span>
+            </a>
+            <form class="d-flex w-50 ms-auto me-3">
+                <input class="form-control me-2" type="search" placeholder="Search products...">
+                <button class="btn btn-primary-custom px-4" type="submit">Search</button>
+            </form>
+            <a href="#" class="btn btn-secondary-custom">Cart <span class="badge bg-dark ms-1">3</span></a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="full-width-nav navbar navbar-expand-lg p-0">
+        <div class="container-fluid px-0">
+            <button class="navbar-toggler my-2 ms-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="product-detail.html">Product-detail</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Wireless Headphones</li>
+            </ol>
+        </nav>
+
+        <div class="row bg-white p-4 rounded border shadow-sm">
+            <!-- Left Pan: Image Zoom -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="img-zoom-container">
+                    <img src="images/1.png" alt="Wireless Headphones" class="img-fluid">
+                </div>
+                <small class="text-muted d-block text-center mt-2">Hover over image to zoom</small>
+            </div>
+
+            <!-- Right Pan: Product Detail -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Premium Wireless Headphones</h2>
+                <p class="h3 text-primary my-3">$129.99</p>
+
+                <h5 class="fw-bold mt-4">Quick Overview</h5>
+                <p class="text-muted">
+                    Experience world-class noise cancellation and crystal-clear audio quality. Features 30-hour battery
+                    life, ergonomic memory foam ear cushions, and seamless Bluetooth 5.0 connectivity.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 my-4">
+                    <label for="quantity" class="form-label mb-0 fw-bold">Qty:</label>
+                    <input type="number" id="quantity" class="form-control w-25" value="1" min="1">
+                    <button class="btn btn-secondary-custom px-4">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 AuraStore. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
