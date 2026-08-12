@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Results - Greenwood Model School</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-8 d-flex align-items-center gap-3">
+                    <span><i class="fa-solid fa-clock me-1"></i> <span id="currentDateTime">Loading...</span></span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="login.html" class="btn btn-sm btn-outline-info text-white"><i
+                            class="fa-solid fa-right-to-bracket me-1"></i> Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-graduation-cap me-2"></i>Greenwood
+                School</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#schoolNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="schoolNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between px-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teacher.html">Teacher</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student.html">Student</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="result.html">Result</a></li>
+                    <li class="nav-item"><a class="nav-link" href="academic.html">Academic</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-breadcrumb mb-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-2">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Student Examination Results</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- Student Result Search Section -->
+        <section class="mb-5 bg-white p-4 rounded shadow-sm">
+            <h3 class="section-title">Search Student Result</h3>
+            <form id="resultForm">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="departmentSelect" class="form-label fw-semibold">Department Wise</label>
+                        <select class="form-select" id="departmentSelect" required>
+                            <option value="" selected disabled>Select Department</option>
+                            <option value="Science">Science</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Humanities">Humanities</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="studentId" class="form-label fw-semibold">Student ID Wise</label>
+                        <input type="text" class="form-control" id="studentId" placeholder="e.g. GMS-2026-001" required>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary px-4"><i
+                                class="fa-solid fa-magnifying-glass me-1"></i> Search Result</button>
+                    </div>
+                </div>
+            </form>
+            <div id="resultOutput" class="d-none"></div>
+        </section>
+
+        <!-- Last Year Result Section -->
+        <section class="mb-5 bg-white p-4 rounded shadow-sm">
+            <h3 class="section-title">Last Year Board Performance Overview (2025)</h3>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h2 class="text-primary fw-bold">99.4%</h2>
+                        <p class="mb-0 text-muted">Pass Rate</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h2 class="text-success fw-bold">142</h2>
+                        <p class="mb-0 text-muted">GPA 5.0 Holders</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h2 class="text-warning fw-bold">350+</h2>
+                        <p class="mb-0 text-muted">Students Appeared</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h2 class="text-info fw-bold">#1</h2>
+                        <p class="mb-0 text-muted">District Rank</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="big-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Greenwood Model School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
