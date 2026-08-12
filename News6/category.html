@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category News - Daily Pulse</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex align-items-center gap-3">
+                    <span><i class="fa-solid fa-clock me-1"></i> <span id="currentDateTime">Loading...</span></span>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-newspaper me-2"></i>Daily Pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNews">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between px-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="category.html" role="button">Category</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="category.html">National</a></li>
+                            <li><a class="dropdown-item" href="category.html">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html">Education</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">Author</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info text-white px-3 ms-lg-3"
+                            href="login.html"><i class="fa-solid fa-user-lock me-1"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-breadcrumb mb-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-2">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="category.html">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">National & World News</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <!-- Category News Section 1 -->
+        <section class="mb-5">
+            <h3 class="section-title">National Highlights</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/nn1.png" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">National Infrastructure Plan Unveiled</h5>
+                            <p class="card-text text-muted">Comprehensive multi-billion dollar investment plan targets
+                                railway and bridge upgrades.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/nn2.png" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Parliamentary Session Opens Today</h5>
+                            <p class="card-text text-muted">Key legislative proposals on healthcare and taxation head to
+                                full chamber votes.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/nn3.png" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Renewable Energy Adoption Accelerates</h5>
+                            <p class="card-text text-muted">Solar and wind generation accounts for record percentage of
+                                national grid usage.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advertisement Section -->
+        <section class="my-5">
+            <div class="p-4 bg-light border text-center rounded shadow-sm">
+                <span class="badge bg-secondary mb-2">Advertisement</span>
+                <h4 class="text-dark">Grow Your Business With Us!</h4>
+                <p class="text-muted mb-3">Reach over 2 Million daily readers across our digital news network.</p>
+                <a href="contact.html" class="btn btn-outline-danger">Book Banner Space Today</a>
+            </div>
+        </section>
+
+        <!-- Category News Section 2 -->
+        <section class="mb-5">
+            <h3 class="section-title">Regional & Community Updates</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/select3.png" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Metropolitan Transit Expansion Approved</h5>
+                            <p class="card-text text-muted">New rapid transit bus lines will connect suburban
+                                communities to downtown hub.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/select4.png" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Annual City Arts & Heritage Expo</h5>
+                            <p class="card-text text-muted">Local artisans and performers gather for three-day
+                                celebration of heritage.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/select1.png" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Regional Health Centers Receive New Equipment</h5>
+                            <p class="card-text text-muted">Upgraded diagnostic technology deployed to community clinics
+                                nationwide.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination Section -->
+        <nav aria-label="News page navigation" class="d-flex justify-content-center my-4">
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="big-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Daily Pulse News Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

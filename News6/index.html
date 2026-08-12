@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Pulse - News Portal</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex align-items-center gap-3">
+                    <span><i class="fa-solid fa-clock me-1"></i> <span id="currentDateTime">Loading...</span></span>
+                    <span class="d-none d-lg-inline">|</span>
+                    <span class="d-none d-lg-inline"><i class="fa-solid fa-envelope me-1"></i>
+                        info@dailypulse.com</span>
+                    <span class="d-none d-lg-inline"><i class="fa-solid fa-phone me-1"></i> +1 (800) 123-4567</span>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-newspaper me-2"></i>Daily Pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNews">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between px-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="category.html" role="button">Category</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="category.html">National</a></li>
+                            <li><a class="dropdown-item" href="category.html">Politics</a></li>
+                            <li><a class="dropdown-item" href="category.html">Sports</a></li>
+                            <li><a class="dropdown-item" href="category.html">Education</a></li>
+                            <li><a class="dropdown-item" href="category.html">Entertainment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">Author</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info text-white px-3 ms-lg-3"
+                            href="login.html"><i class="fa-solid fa-user-lock me-1"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breaking News Section -->
+    <div class="breaking-news-container my-3 shadow-sm">
+        <div class="breaking-title"><i class="fa-solid fa-bolt me-2"></i> Breaking News</div>
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+                <div class="ticker-item"><a href="#">Global Economic Summit 2026 kicks off with key focus on sustainable
+                        technology.</a></div>
+                <div class="ticker-item"><a href="#">National Education Board announces new digital curriculum
+                        guidelines for schools.</a></div>
+                <div class="ticker-item"><a href="#">Underdog team secures surprising victory in national championship
+                        tournament final.</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container my-4">
+
+        <!-- Lead News Section -->
+        <div class="row g-4 mb-5">
+            <!-- Left Part: Lead News -->
+            <div class="col-lg-8">
+                <div class="card news-card lead-news-card">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80"
+                        class="card-img-top" alt="Lead News">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Lead Story</span>
+                        <h2 class="card-title text-dark">Major Technological Breakthrough Announced in Renewable Energy
+                            Storage</h2>
+                        <p class="card-text text-muted">Scientists have unveiled a next-generation energy storage
+                            solution that promises to cut power grid emissions by 40% over the next decade. Industry
+                            leaders react to the milestone...</p>
+                        <a href="category.html" class="btn btn-primary btn-sm">Read Full Coverage</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Part: Selected Four News -->
+            <div class="col-lg-4">
+                <h4 class="section-title">Selected Stories</h4>
+                <div class="d-flex flex-column gap-3">
+                    <div class="card p-2 shadow-sm border-0">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4">
+                                <img src="images/select1.png" class="img-fluid rounded" alt="News">
+                            </div>
+                            <div class="col-8 ps-3">
+                                <h6 class="mb-1"><a href="category.html">Parliament Passes Infrastructure Development
+                                        Bill</a></h6>
+                                <small class="text-muted"><i class="fa-regular fa-clock"></i> 2 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-2 shadow-sm border-0">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4">
+                                <img src="images/select2.png" class="img-fluid rounded" alt="News">
+                            </div>
+                            <div class="col-8 ps-3">
+                                <h6 class="mb-1"><a href="category.html">National Team Prepares for World Cup
+                                        Qualifiers</a></h6>
+                                <small class="text-muted"><i class="fa-regular fa-clock"></i> 4 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-2 shadow-sm border-0">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4">
+                                <img src="images/select3.png" class="img-fluid rounded" alt="News">
+                            </div>
+                            <div class="col-8 ps-3">
+                                <h6 class="mb-1"><a href="category.html">Universities Launch Joint Research Grants</a>
+                                </h6>
+                                <small class="text-muted"><i class="fa-regular fa-clock"></i> 5 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-2 shadow-sm border-0">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-4">
+                                <img src="images/select4.png" class="img-fluid rounded" alt="News">
+                            </div>
+                            <div class="col-8 ps-3">
+                                <h6 class="mb-1"><a href="category.html">Annual Cultural Festival Draws Thousands</a>
+                                </h6>
+                                <small class="text-muted"><i class="fa-regular fa-clock"></i> 7 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest News Section -->
+        <section class="mb-5">
+            <h3 class="section-title">Latest News</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/ln1.png" class="card-img-top" alt="Market Analysis">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Finance</span>
+                            <h5 class="card-title">Stock Markets Reach New All-Time Highs</h5>
+                            <p class="card-text text-muted">Tech sector rallies drive index surges across global trading
+                                centers today.</p>
+                            <a href="category.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/ln2.png" class="card-img-top" alt="Business Summit">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Business</span>
+                            <h5 class="card-title">Global Trade Expo Opened by Commerce Minister</h5>
+                            <p class="card-text text-muted">Over 500 international vendors showcase innovations in
+                                manufacturing and logistics.</p>
+                            <a href="category.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/ln3.png" class="card-img-top" alt="Science">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Science</span>
+                            <h5 class="card-title">Deep Space Telescope Captures Unprecedented Images</h5>
+                            <p class="card-text text-muted">New astronomical data sheds light on the atmospheric
+                                formation of distant exoplanets.</p>
+                            <a href="category.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- National News Section -->
+        <section class="mb-5">
+            <h3 class="section-title">National News</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/nn1.png" class="card-img-top" alt="National Project">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">National</span>
+                            <h5 class="card-title">Highway Expansion Project Reaches 80% Completion</h5>
+                            <p class="card-text text-muted">The major transport corridor is expected to reduce transit
+                                times between major cities by two hours.</p>
+                            <a href="category.html" class="btn btn-outline-success btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/nn2.png" class="card-img-top" alt="Civic Forum">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">National</span>
+                            <h5 class="card-title">Civic Forum Debates Urban Green Housing Policies</h5>
+                            <p class="card-text text-muted">City planners gather to outline mandatory solar panel
+                                integration on commercial developments.</p>
+                            <a href="category.html" class="btn btn-outline-success btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/nn3.png" class="card-img-top" alt="Smart City">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">National</span>
+                            <h5 class="card-title">Smart City Pilot Project Rolled Out in Capital</h5>
+                            <p class="card-text text-muted">Automated traffic lights and smart waste management systems
+                                operational starting this week.</p>
+                            <a href="category.html" class="btn btn-outline-success btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education News Section -->
+        <section class="mb-5">
+            <h3 class="section-title">Education News</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/en1.png" class="card-img-top" alt="Education Reform">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Education</span>
+                            <h5 class="card-title">STEM Education Funding Increased by 25%</h5>
+                            <p class="card-text text-muted">Government approves upgraded robotics and coding labs for
+                                public high schools nationwide.</p>
+                            <a href="category.html" class="btn btn-outline-warning text-dark btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/en2.png" class="card-img-top" alt="Scholarship">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Education</span>
+                            <h5 class="card-title">Higher Education Overseas Scholarship Open</h5>
+                            <p class="card-text text-muted">Meritorious students invited to apply for fully funded
+                                postgraduate research grants abroad.</p>
+                            <a href="category.html" class="btn btn-outline-warning text-dark btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <img src="images/en3.png" class="card-img-top" alt="Digital Classroom">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Education</span>
+                            <h5 class="card-title">Digital Learning Portals Integrated into School Curricula</h5>
+                            <p class="card-text text-muted">Interactive AI tools aim to assist teachers and students
+                                with personalized learning tracks.</p>
+                            <a href="category.html" class="btn btn-outline-warning text-dark btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Big Footer Section -->
+    <footer class="big-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5>About Daily Pulse</h5>
+                    <p>Daily Pulse is a leading digital news portal providing unbiased, accurate, and real-time coverage
+                        across national affairs, politics, sports, education, and global happenings.</p>
+                    <div class="d-flex gap-3 fs-5 mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook text-light"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter text-light"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin text-light"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube text-light"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="author.html">Editorial Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Reporter Portal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Categories</h5>
+                    <ul>
+                        <li><a href="category.html">National News</a></li>
+                        <li><a href="category.html">Political Analysis</a></li>
+                        <li><a href="category.html">Sports Coverage</a></li>
+                        <li><a href="category.html">Education Pulse</a></li>
+                        <li><a href="category.html">Entertainment & Arts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i> 100 Media Avenue, Suite 500, Metro
+                        City</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> newsroom@dailypulse.com</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> +1 (800) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section -->
+    <div class="bottom-footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Daily Pulse News Portal. All Rights Reserved. Developed according to
+                professional web standards.</p>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
