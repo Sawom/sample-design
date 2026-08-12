@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #0d9488;
+    --secondary-color: #f97316;
+    --dark-color: #0f172a;
+    --light-bg: #f8fafc;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Top Utilities Header */
+.top-header {
+    background-color: var(--dark-color);
+    font-size: 0.875rem;
+}
+
+/* Full Width Container-wide Nav with Hover Effect */
+.full-width-nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.full-width-nav .nav-link {
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 1rem 1.5rem !important;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.full-width-nav .nav-link:hover,
+.full-width-nav .nav-link.active {
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+}
+
+/* Custom Styled Unordered List for Band/Department Members (No Framework) */
+ul.custom-member-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.custom-member-list li {
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+ul.custom-member-list li:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Gallery Images */
+.gallery-img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Collapsible FAQ Custom Style */
+.faq-item {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    color: var(--dark-color);
+    border: none;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.faq-content {
+    display: none;
+    padding: 15px 20px;
+    border-top: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    color: #475569;
+}
+
+.faq-content.show {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: #94a3b8;
+}

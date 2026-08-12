@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTC - Contact Us</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Utilities Header -->
+    <div class="top-header text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="current-date-time"></div>
+            <div><span>Call Us: +880 1711 000000</span></div>
+        </div>
+    </div>
+
+    <!-- Header Banner -->
+    <div class="bg-white py-3 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="h3 fw-bold text-decoration-none text-dark m-0">
+                TTC <span style="color: var(--primary-color);">Technical Training Centre</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="full-width-nav navbar navbar-expand-lg p-0">
+        <div class="container-fluid px-0">
+            <button class="navbar-toggler my-2 ms-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#ttcNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="ttcNavbar">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm border-0">
+                    <h4 class="fw-bold mb-3">Send Us a Message</h4>
+                    <form id="ttcContactForm" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Full Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail" required
+                                placeholder="example@domain.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Mobile Number (11 Digits)</label>
+                            <input type="text" class="form-control" id="contactMobile" required maxlength="11"
+                                placeholder="01700000000">
+                            <small class="text-muted">Must be numbers only and exactly 11 digits.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn text-white w-100 py-2"
+                            style="background-color: var(--primary-color);">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information & Integrated Google Map -->
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm border-0 mb-4">
+                    <h4 class="fw-bold mb-3">Contact Information</h4>
+                    <p class="mb-2"><strong>Address:</strong> Technical Training Centre Campus, Main Road, Dhaka,
+                        Bangladesh</p>
+                    <p class="mb-2"><strong>Email:</strong> info@ttc.edu.bd</p>
+                    <p class="mb-0"><strong>Phone:</strong> +880 1711 000000</p>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="card border-0 shadow-sm overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902442430138!2d90.39108031543167!3d23.75085809467657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a000000001%3A0x8849b28f80459344!2sDhaka!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd"
+                        width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Confirmation Popup Window -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-white" style="background-color: var(--primary-color);">
+                    <h5 class="modal-title">Form Submitted</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">Thank you for reaching out to TTC. Your contact request has been received
+                        successfully!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Technical Training Centre (TTC). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
