@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header py-2 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+                <span class="me-3"><i class="bi bi-envelope"></i> info@gourmethaven.com</span>
+                <span class="me-3"><i class="bi bi-telephone"></i> +1 234 567 890</span>
+                <span class="me-3"><i class="bi bi-clock"></i> Mon-Sun: 10:00 AM - 11:00 PM</span>
+            </div>
+            <div>
+                <span id="current-datetime" class="badge bg-danger me-3"></span>
+                <a href="login.html" class="text-light text-decoration-none me-2">Login</a> |
+                <a href="signup.html" class="text-light text-decoration-none ms-2">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger fs-3" href="index.html"><i class="bi bi-egg-fried"></i> Gourmet
+                Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="item-detail.html">Item-details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="btn btn-outline-danger btn-sm" href="login.html">Login /
+                            Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Slider -->
+    <section class="hero-slider">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/sl1.png" class="d-block w-100" alt="Delicious Feast">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Exquisite Culinary Delights</h1>
+                        <p class="lead">Experience world-class dining made with fresh organic ingredients.</p>
+                        <a href="reservation.html" class="btn btn-danger btn-lg">Book a Table</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/sl2.png" class="d-block w-100" alt="Juicy Steaks">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Savor Every Bite</h1>
+                        <p class="lead">Crafted by master chefs dedicated to flavor perfection.</p>
+                        <a href="reservation.html" class="btn btn-danger btn-lg">Book a Table</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/sl1.png" class="d-block w-100" alt="Juicy Steaks">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Savor Every Bite</h1>
+                        <p class="lead">Crafted by master chefs dedicated to flavor perfection.</p>
+                        <a href="reservation.html" class="btn btn-danger btn-lg">Book a Table</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Special Dishes Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Special Dishes</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/f1.png" class="card-img-top" alt="Pasta">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Truffle Alfredo Pasta</h5>
+                            <p class="card-text text-muted">Rich creamy Alfredo sauce with fresh Italian black truffles.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-danger fs-5">$18.99</span>
+                                <a href="item-detail.html" class="btn btn-sm btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/f2.png" class="card-img-top" alt="Burger">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Gourmet Beef Burger</h5>
+                            <p class="card-text text-muted">Angus beef patty with cheddar, caramelized onions, and
+                                secret sauce.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-danger fs-5">$14.50</span>
+                                <a href="item-detail.html" class="btn btn-sm btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/f3.png" class="card-img-top" alt="Pizza">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Woodfired Margherita</h5>
+                            <p class="card-text text-muted">Fresh basil, mozzarella, and artisan tomato sauce cooked in
+                                woodfire.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-danger fs-5">$16.00</span>
+                                <a href="item-detail.html" class="btn btn-sm btn-danger">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Recommendation -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Chef's Recommendations</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="images/f4.png" class="img-fluid rounded shadow" alt="Grilled Steak">
+                </div>
+                <div class="col-md-6">
+                    <span class="badge bg-danger mb-2">Featured Dish</span>
+                    <h3 class="fw-bold">Prime Ribeye Steak with Herbs</h3>
+                    <p class="text-muted">Aged 28 days, seared to medium-rare perfection served with garlic butter mash
+                        and rosemary-infused roasted veggies.</p>
+                    <h4 class="text-danger fw-bold mb-3">$32.00</h4>
+                    <a href="item-detail.html" class="btn btn-outline-danger">View Item Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Customer Testimonials</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 shadow-sm">
+                        <div class="text-warning mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text">"The food was absolutely extraordinary! The atmosphere is cozy and the
+                            service is unmatched."</p>
+                        <h6 class="fw-bold text-end">- Sarah Jenkins</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 shadow-sm">
+                        <div class="text-warning mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text">"Best steak in the city! Reservation process was seamless, will definitely
+                            come back."</p>
+                        <h6 class="fw-bold text-end">- Michael Reed</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 shadow-sm">
+                        <div class="text-warning mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <p class="card-text">"Delightful desserts and refreshing drinks. A great spot for weekend family
+                            dinners!"</p>
+                        <h6 class="fw-bold text-end">- Emily Watson</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-5 bg-danger text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-2">Subscribe to Our Newsletter</h2>
+            <p class="mb-4">Get special offers, event notifications, and weekly dish updates straight to your inbox.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                        <button class="btn btn-dark" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Footer -->
+    <footer class="pt-5 pb-3" id="contact">
+        <div class="container">
+            <div class="row g-4" id="about">
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3"><i class="bi bi-egg-fried"></i> Gourmet Haven</h5>
+                    <p>Delivering unforgettable culinary experiences with passion, luxury, and fresh flavor every single
+                        day.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Contacts</h5>
+                    <p><i class="bi bi-geo-alt"></i> 123 Culinary St, Food City</p>
+                    <p><i class="bi bi-telephone"></i> +1 234 567 890</p>
+                    <p><i class="bi bi-envelope"></i> contact@gourmethaven.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Gourmet Haven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

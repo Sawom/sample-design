@@ -1,0 +1,71 @@
+/* General Custom Styles */
+:root {
+  --primary-color: #d9534f;
+  --secondary-color: #222;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Top Header */
+.top-header {
+  background-color: #1a1a1a;
+  color: #ccc;
+  font-size: 0.875rem;
+}
+
+/* Hover effect on Nav items */
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* Hero Carousel */
+.hero-slider img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Dish Zoom Box */
+.zoom-container {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.zoom-container img {
+  transition: transform 0.5s ease;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.15);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--secondary-color);
+  color: #aaa;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #fff;
+}
