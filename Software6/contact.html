@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NexGen Software</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-8 d-flex align-items-center gap-3">
+                    <span><i class="fa-solid fa-clock text-info me-1"></i> <span
+                            id="currentDateTime">Loading...</span></span>
+                    <span class="d-none d-md-inline">|</span>
+                    <span><i class="fa-solid fa-envelope me-1"></i> contact@nexgensoft.com</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="contact.html" class="btn btn-sm btn-outline-info text-white active"><i
+                            class="fa-solid fa-right-to-bracket me-1"></i> Login / Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code me-2 text-info"></i>NexGen Soft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#companyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="companyNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between px-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Login / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-breadcrumb mb-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-1">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-5">
+
+            <!-- Contact Form Section -->
+            <div class="col-lg-7">
+                <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+                    <h3 class="fw-bold mb-4">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label fw-semibold">Your Name *</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label fw-semibold">Email Address *</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="john@company.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label fw-semibold">Subject *</label>
+                            <input type="text" class="form-control" id="contactSubject" placeholder="Software Inquiry"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactMessage" class="form-label fw-semibold">Project Scope / Message *</label>
+                            <textarea class="form-control" id="contactMessage" rows="5"
+                                placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold"><i
+                                class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Direct Contact Details & Google Map Embed -->
+            <div class="col-lg-5">
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="fw-bold mb-3">Headquarters</h4>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot text-primary me-2"></i> 100 Silicon Valley
+                        Boulevard, Suite 400, CA 94025, USA</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone text-primary me-2"></i> +1 (800) 456-7890</p>
+                    <p class="mb-0"><i class="fa-solid fa-envelope text-primary me-2"></i> contact@nexgensoft.com</p>
+                </div>
+
+                <!-- Google Map Embed showing company location -->
+                <div class="rounded shadow-sm overflow-hidden" style="height: 280px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290621062!2d-122.083855!3d37.4219999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="big-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 NexGen Software Development Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

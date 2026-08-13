@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - NexGen Software</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-8 d-flex align-items-center gap-3">
+                    <span><i class="fa-solid fa-clock text-info me-1"></i> <span
+                            id="currentDateTime">Loading...</span></span>
+                    <span class="d-none d-md-inline">|</span>
+                    <span><i class="fa-solid fa-envelope me-1"></i> contact@nexgensoft.com</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="contact.html" class="btn btn-sm btn-outline-info text-white"><i
+                            class="fa-solid fa-right-to-bracket me-1"></i> Login / Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code me-2 text-info"></i>NexGen Soft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#companyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="companyNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between px-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Login / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-breadcrumb mb-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-1">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Projects & Portfolio</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Project Categories Filter (Left Panel) -->
+            <div class="col-lg-3">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h5 class="fw-bold mb-3"><i class="fa-solid fa-filter text-primary me-2"></i>Filter Categories</h5>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action active fw-semibold">All Projects
+                            (8)</a>
+                        <a href="#" class="list-group-item list-group-item-action">Web Applications</a>
+                        <a href="#" class="list-group-item list-group-item-action">Mobile Apps</a>
+                        <a href="#" class="list-group-item list-group-item-action">UI/UX Systems</a>
+                        <a href="#" class="list-group-item list-group-item-action">Cloud Infrastructure</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section (Right Panel) -->
+            <div class="col-lg-9">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card custom-card">
+                            <div class="zoom-container">
+                                <img src="images/pr1.png" class="card-img-top zoom-effect" alt="Project">
+                            </div>
+                            <div class="card-body p-4">
+                                <span class="badge bg-info text-dark mb-2">Web App</span>
+                                <h5 class="card-title fw-bold">FinCloud Real-Time Engine</h5>
+                                <p class="card-text text-muted small">High-throughput microservice architecture for
+                                    financial data indexing.</p>
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">View Project Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card custom-card">
+                            <div class="zoom-container">
+                                <img src="images/pr2.png" class="card-img-top zoom-effect" alt="Project">
+                            </div>
+                            <div class="card-body p-4">
+                                <span class="badge bg-success mb-2">Mobile App</span>
+                                <h5 class="card-title fw-bold">TeleMed Telehealth Telemetry</h5>
+                                <p class="card-text text-muted small">Cross-platform React Native app with video
+                                    consultations & chat.</p>
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">View Project Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="big-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 NexGen Software Development Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

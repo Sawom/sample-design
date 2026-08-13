@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinCloud Case Study - NexGen Software</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+                <div class="col-md-8 d-flex align-items-center gap-3">
+                    <span><i class="fa-solid fa-clock text-info me-1"></i> <span
+                            id="currentDateTime">Loading...</span></span>
+                    <span class="d-none d-md-inline">|</span>
+                    <span><i class="fa-solid fa-envelope me-1"></i> contact@nexgensoft.com</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="contact.html" class="btn btn-sm btn-outline-info text-white"><i
+                            class="fa-solid fa-right-to-bracket me-1"></i> Login / Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code me-2 text-info"></i>NexGen Soft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#companyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="companyNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between px-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Login / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-breadcrumb mb-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-1">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="portfolio.html">Projects</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FinCloud Real-Time Engine</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-5">
+
+            <!-- Project Image Gallery with Zoom effect (Left Panel) -->
+            <div class="col-lg-7">
+                <div class="zoom-container shadow-sm mb-3">
+                    <img src="images/pr1.png" class="img-fluid zoom-effect rounded" alt="Project Image Main">
+                </div>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <div class="zoom-container">
+                            <img src="images/sl2.png" class="img-fluid zoom-effect rounded" alt="Gallery">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="zoom-container">
+                            <img src="images/sl3.png" class="img-fluid zoom-effect rounded" alt="Gallery">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="zoom-container">
+                            <img src="images/sl4.png" class="img-fluid zoom-effect rounded" alt="Gallery">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Information (Right Panel) -->
+            <div class="col-lg-5">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h3 class="fw-bold text-primary mb-3">FinCloud Real-Time Analytics Engine</h3>
+                    <p class="text-muted">A comprehensive financial monitoring platform built to handle massive
+                        transactional volume with sub-100ms analytics processing speeds.</p>
+
+                    <hr class="my-3">
+
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><strong>Client Name:</strong> FinTech Global Ltd.</li>
+                        <li class="mb-2"><strong>Project Duration:</strong> 6 Months</li>
+                        <li class="mb-2"><strong>Industry:</strong> Financial Services</li>
+                        <li class="mb-2"><strong>Technologies Used:</strong>
+                            <span class="badge bg-primary">React</span>
+                            <span class="badge bg-success">Node.js</span>
+                            <span class="badge bg-warning text-dark">Redis</span>
+                            <span class="badge bg-dark">AWS Lambda</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-primary w-100 py-2"><i class="fa-solid fa-external-link me-2"></i>Visit
+                        Live Demo</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Related Projects Section -->
+        <section class="mt-5 pt-4">
+            <h3 class="section-title">Related Projects</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="zoom-container">
+                            <img src="images/sl1.png" class="card-img-top zoom-effect" alt="Related Project">
+                        </div>
+                        <div class="card-body p-3">
+                            <h6 class="fw-bold mb-1">TeleMed Telehealth Telemetry</h6>
+                            <p class="text-muted small mb-0">Cross-Platform Healthcare App</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="zoom-container">
+                            <img src="images/sl2.png" class="card-img-top zoom-effect" alt="Related Project">
+                        </div>
+                        <div class="card-body p-3">
+                            <h6 class="fw-bold mb-1">Smart Logistics ERP</h6>
+                            <p class="text-muted small mb-0">UI/UX Enterprise Dashboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <div class="zoom-container">
+                            <img src="images/sl3.png" class="card-img-top zoom-effect" alt="Related Project">
+                        </div>
+                        <div class="card-body p-3">
+                            <h6 class="fw-bold mb-1">AWS Multi-Region K8s Cluster</h6>
+                            <p class="text-muted small mb-0">DevOps Infrastructure Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="big-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 NexGen Software Development Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

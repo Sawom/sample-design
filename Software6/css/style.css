@@ -1,0 +1,178 @@
+/* Global Styling */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #2b2d42;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Top Section */
+.top-header {
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.top-header a {
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.top-header a:hover {
+    color: #38bdf8;
+}
+
+/* Navigation Section */
+.navbar-custom {
+    background-color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.navbar-custom .nav-link {
+    color: #f1f5f9 !important;
+    font-weight: 500;
+    padding: 12px 18px !important;
+    transition: all 0.3s ease;
+}
+
+/* Full container wide navigation menu with mouse hover effect */
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-link.active {
+    background-color: #0284c7;
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+/* Breadcrumb Styling */
+.bg-breadcrumb {
+    background-color: #e2e8f0;
+    padding: 18px 0;
+}
+
+.breadcrumb-item a {
+    color: #0284c7;
+    font-weight: 500;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+    color: #0f172a;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0284c7;
+    border-radius: 2px;
+}
+
+.section-title.text-center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Cards Animation & Image Hover Zoom */
+.custom-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Project Image Gallery Zoom Effect */
+.zoom-container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.zoom-effect {
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+
+.zoom-container:hover .zoom-effect {
+    transform: scale(1.08);
+}
+
+/* Big Footer & Bottom Footer */
+.big-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 60px 0 30px;
+}
+
+.big-footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.big-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.big-footer ul li {
+    margin-bottom: 12px;
+}
+
+.big-footer ul li a {
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.big-footer ul li a:hover {
+    color: #38bdf8;
+}
+
+.bottom-footer {
+    background-color: #020617;
+    color: #64748b;
+    padding: 18px 0;
+    font-size: 0.875rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* Tech Stack Badge Cards */
+.tech-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+    border-color: #0284c7;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(2, 132, 199, 0.1);
+}
